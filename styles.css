@@ -13,10 +13,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
 /* Header styles */
 .header-wrapper {
-  background-color: #3e3ee0;
+  background-color: #00629f;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,10 +23,10 @@ body {
   padding: 1rem 2rem;
   min-height: 60px;
   position: fixed;
-  top: 0; /* Position it at the top of the viewport */
-  left: 0; /* Ensure it aligns with the left edge of the viewport */
-  width: 100%; /* Ensure it spans the full width of the viewport */
-  z-index: 1000; /* Place it above other content */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 #header-img {
@@ -36,40 +35,6 @@ body {
   height: 120px;
   background-color: white;
   border-radius: 10px;
-}
-
-/* Responsive behavior */
-@media screen and (max-width: 768px) {
-  .header-wrapper {
-    flex-direction: column;
-    align-items: flex-start;
-    min-height: auto;
-  }
-
-  .logo-title {
-    flex: 0 1 auto; /* Allow the logo to adjust in size */
-    margin-bottom: 1rem; /* Add some space between logo and nav on small screens */
-  }
-
-  #nav-bar {
-    width: 100%; /* Take full width on small screens */
-    display: block; /* Ensure nav is visible */
-  }
-
-  #nav-bar ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Align nav items to the left */
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
-
-  #nav-bar ul li {
-    width: 100%; /* Make each nav item take full width */
-    padding: 0.5rem 0;
-    text-align: left; /* Align text to the left */
-  }
 }
 
 .logo-title {
@@ -104,6 +69,17 @@ body {
   list-style-type: none;
 }
 
+/* Media Queries for Smaller Screens */
+
+@media screen and (max-width: 768px) {
+  .logo-title {
+    font-size: 2.5em;
+  }
+  #nav-bar {
+    width: 100%;
+  }
+}
+
 /* Main content styles */
 main {
   margin: 1em;
@@ -125,7 +101,7 @@ main {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
-  color: #3e3ee0;
+  color: #00629f;
 }
 
 .discount-image {
@@ -154,7 +130,7 @@ main {
 
 .form h2 {
   font-size: 1.5em;
-  color: #3e3ee0;
+  color: #00629f;
   margin-bottom: 0.5em;
 }
 
@@ -222,7 +198,7 @@ main {
 
 .trending-products p b {
   font-weight: bold;
-  color: blue;
+  color: #00629f;
 }
 
 .trending-products .product p {
@@ -241,17 +217,6 @@ main {
   margin-right: 6em;
 }
 
-footer {
-  height: 72px;
-  background: #eee;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .third-row {
   border: 1px solid black;
   padding: 16px;
@@ -260,6 +225,10 @@ footer {
   margin-top: 1em;
   display: flex;
   background-color: #f2f2f2;
+}
+
+.third-row h2 {
+  margin: 12px;
 }
 
 .showcase {
@@ -272,6 +241,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
+  margin-left: 1em;
 }
 
 .each-product {
@@ -293,6 +263,10 @@ footer {
   justify-content: space-between;
 }
 
+.product-price {
+  color: #00629f;
+}
+
 .top-devs {
   flex: 0.25;
 }
@@ -307,4 +281,22 @@ footer {
   height: 100px;
   object-fit: contain;
   margin: 0em 0.5em;
+}
+
+footer {
+  height: 72px;
+  background: #eee;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px; /* Add space between flex items */
+}
+
+footer a {
+  margin-left: 5px;
+  color: #00629f;
+  text-decoration: none;
 }
