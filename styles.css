@@ -6,7 +6,7 @@
 html {
   font-family: "Roboto", sans-serif;
   margin: 0;
-  padding: 0;
+  padding-top: 22vh;
 }
 
 body {
@@ -23,6 +23,11 @@ body {
   flex-wrap: wrap;
   padding: 1rem 2rem;
   min-height: 60px;
+  position: fixed;
+  top: 0; /* Position it at the top of the viewport */
+  left: 0; /* Ensure it aligns with the left edge of the viewport */
+  width: 100%; /* Ensure it spans the full width of the viewport */
+  z-index: 1000; /* Place it above other content */
 }
 
 #header-img {
