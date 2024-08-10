@@ -63,10 +63,13 @@ body {
   padding: 1em;
   flex-wrap: wrap;
   gap: 1rem;
+  list-style: none;
 }
 
-.nav-link {
-  list-style-type: none;
+#nav-bar li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
 }
 
 /* Media Queries for Smaller Screens */

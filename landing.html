@@ -26,10 +26,10 @@
         >
         <nav id="nav-bar">
           <ul>
-            <li class="nav-link" href="#test">Sales</li>
-            <li class="nav-link" href="#test">Trending</li>
-            <li class="nav-link" href="#test">Products</li>
-            <li class="nav-link" href="#test">Contact</li>
+            <li><a class="nav-link" href="#sales">Sales</a></li>
+            <li><a class="nav-link" href="#trending">Trending</a></li>
+            <li><a class="nav-link" href="#products">Products</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -37,7 +37,7 @@
     <!--Header-->
     <!--Main-->
     <main>
-      <div class="first-row">
+      <div class="first-row" id="sales">
         <div class="container-image-holiday">
           <p>Holiday Sale!</p>
           <div class="discount-image">
@@ -48,7 +48,6 @@
             />
           </div>
         </div>
-
         <form
           action="https://www.freecodecamp.com/email-submit"
           method="post"
@@ -72,10 +71,10 @@
             <input type="checkbox" id="tos-checkbox" required />
             <label for="tos-checkbox">I agree to the Terms of Service</label>
           </div>
-          <button type="submit" class="submit-form">Submit</button>
+          <input type="submit" id="submit" class="submit-form" value="Submit" />
         </form>
       </div>
-      <div class="second-row">
+      <div class="second-row" id="trending">
         <h2>Trending this week</h2>
         <div class="container-trending">
           <div class="trending-products">
@@ -123,7 +122,7 @@
           </div>
         </div>
       </div>
-      <div class="third-row">
+      <div class="third-row" id="products">
         <div class="showcase">
           <h2>Products</h2>
           <div class="products-container">
@@ -283,12 +282,11 @@
     </main>
     <!--Main-->
     <!--Footer-->
-    <footer>
+    <footer id="contact">
       Created by Sebastian Martinez Moncada, inspired by
       <a href="https://secure.simmarket.com/default-en.html">SimMarket</a> for
       learning purposes
     </footer>
-
     <!--Footer-->
   </body>
   <!--Body-->
