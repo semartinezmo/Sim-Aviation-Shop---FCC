@@ -37,17 +37,99 @@
     <!--Header-->
     <!--Main-->
     <main>
-      <div class="discount-image">
-        <img
-          src="https://i.ibb.co/LgZxRV8/12e5b985-fb6a-4e5e-98a2-78b2b3310304.jpg"
-          alt="Discounts Image"
-        />
+      <div class="first-row">
+        <div class="container-image-holiday">
+          <p>Holiday Sale!</p>
+          <div class="discount-image">
+            <img
+              src="https://i.ibb.co/LgZxRV8/12e5b985-fb6a-4e5e-98a2-78b2b3310304.jpg"
+              alt="Discounts Image"
+              id="discount-image"
+            />
+          </div>
+        </div>
+
+        <form action="" method="post" class="form" id="form">
+          <h2>Want to get informed about upcoming sales?</h2>
+          <p>Enter your name</p>
+          <input type="text" placeholder="John Doe" name="name" required />
+          <p>Enter your email</p>
+          <input
+            type="email"
+            placeholder="johndoe@gmail.com"
+            name="email"
+            id="email"
+            required
+          />
+          <p>Enter your phone number</p>
+          <input type="tel" placeholder="123-456-7890" name="phone" required />
+          <div class="tos">
+            <input type="checkbox" id="tos-checkbox" required />
+            <label for="tos-checkbox">I agree to the Terms of Service</label>
+          </div>
+          <button type="submit" class="submit-form">Submit</button>
+        </form>
       </div>
-      <div class="form"><p>test</p></div>
+      <div class="second-row">
+        <h2>Trending this week</h2>
+        <div class="container-trending">
+          <div class="trending-products">
+            <div class="product">
+              <img
+                src="https://secure.simmarket.com/images/products/6/60/16553/simmarketCoverAPLV2_newProductIcon.jpg"
+                alt="A Pilots Life"
+              />
+              <p>A Pilot's Life - <b>$49.99</b></p>
+            </div>
+            <div class="product">
+              <img
+                src="https://secure.simmarket.com/images/products/1/1d/18984/boxart.png"
+                alt="Active Sky"
+              />
+              <p>Active Sky - <b>$39.99</b></p>
+            </div>
+            <div class="product">
+              <img
+                src="https://secure.simmarket.com/images/products/d/d8/17224/FCR-V5-product-logo_200x282.jpg"
+                alt="Flight Replay"
+              />
+              <p>Flight Control Replay - <b>$29.99</b></p>
+            </div>
+            <div class="product">
+              <img
+                src="https://secure.simmarket.com/images/products/e/e7/16681/arkwork_fsrealistic_small.png"
+                alt="FS Realistic"
+              />
+              <p>FS Realistic - <b>$19.99</b></p>
+            </div>
+          </div>
+          <div class="video">
+            <iframe
+              id="video"
+              width="600px"
+              height="auto"
+              src="https://www.youtube.com/embed/8FuNV-SLw2s"
+              title="The Unofficial PMDG 777-300ER Trailer | Microsoft Flight Simulator | #aviationlads"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="third-row">
+        <div class="showcase">
+          <h2>Products</h2>
+        </div>
+        <div class="top-devs">
+          <h2>Top Developers</h2>
+        </div>
+      </div>
     </main>
     <!--Main-->
     <!--Footer-->
-    <footer></footer>
+    <footer>Created by Sebastian Martinez Moncada</footer>
     <!--Footer-->
   </body>
   <!--Body-->
